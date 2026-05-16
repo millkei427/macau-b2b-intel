@@ -1,0 +1,45 @@
+{
+  "name": "@millkei/macau-b2b-intel",
+  "version": "0.1.0",
+  "description": "Macau B2B intelligence data sources — schools, hotels, gov departments. Official APIs + scrapers with email/website/phone.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./schools": {
+      "import": "./dist/sources/schools.js",
+      "types": "./dist/sources/schools.d.ts"
+    },
+    "./hotels": {
+      "import": "./dist/sources/hotels.js",
+      "types": "./dist/sources/hotels.d.ts"
+    },
+    "./gov": {
+      "import": "./dist/sources/gov.js",
+      "types": "./dist/sources/gov.d.ts"
+    }
+  },
+  "files": ["dist", "README.md", "SKILL.md"],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "typecheck": "tsc --noEmit",
+    "example": "tsx examples/basic.ts"
+  },
+  "keywords": ["macau", "b2b", "directory", "scraper", "tender", "outreach"],
+  "author": "millkei",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

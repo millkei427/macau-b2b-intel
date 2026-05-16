@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+.vscode/
+.idea/
+# dist/ is intentionally committed so consumers can use without build step
+# (Alternative: prepare script will build on git+install)
