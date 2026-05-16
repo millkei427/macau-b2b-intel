@@ -18,4 +18,22 @@ export {
   type MacauGovEntity,
 } from "./sources/gov.js";
 
+export {
+  fetchAllMacauRestaurants,
+  fetchRestaurantDetail,
+  type MacauRestaurant,
+} from "./sources/restaurants.js";
+
+export {
+  fetchAllMacauTravelAgencies,
+  fetchAgencyDetail,
+  type MacauTravelAgency,
+} from "./sources/travel-agencies.js";
+
+export {
+  fetchAllMacauCasinos,
+  MACAU_CASINOS,
+  type MacauCasino,
+} from "./sources/casinos.js";
+
 export { scrapeEmails } from "./utils/email-scraper.js";

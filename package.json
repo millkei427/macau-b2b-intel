@@ -21,6 +21,18 @@
     "./gov": {
       "import": "./dist/sources/gov.js",
       "types": "./dist/sources/gov.d.ts"
+    },
+    "./restaurants": {
+      "import": "./dist/sources/restaurants.js",
+      "types": "./dist/sources/restaurants.d.ts"
+    },
+    "./travel-agencies": {
+      "import": "./dist/sources/travel-agencies.js",
+      "types": "./dist/sources/travel-agencies.d.ts"
+    },
+    "./casinos": {
+      "import": "./dist/sources/casinos.js",
+      "types": "./dist/sources/casinos.d.ts"
     }
   },
   "files": ["dist", "README.md", "SKILL.md"],
